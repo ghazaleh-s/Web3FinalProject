@@ -1,0 +1,17 @@
+/*Statistics*/
+
+.static{
+
+    @include insertPictures(homeImages,statistics,bottom);
+    background-attachment:fixed;
+    color: $white;
+    span{
+      font-size: 55px;
+      font-family: BTabassom,'BTabassom',persianFont;
+    }
+    
+  }
+  
+  
+  
+  /*End Of Statistics*/

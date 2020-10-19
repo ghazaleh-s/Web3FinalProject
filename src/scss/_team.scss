@@ -1,0 +1,35 @@
+/*Team*/
+
+.team{
+    background-color: $lightBG;
+    color: $dBlue;
+  
+    .teamText{
+      h5 {
+        font-size: 25px;
+      }
+      span{
+        color: $lBlue;
+        font-size: 16px;
+        opacity: 58%;
+  
+      }
+      p{
+        font-size: 13px;
+        color: $mBlue;
+        opacity: 80%;
+      }
+      .iconStyle{
+        i{
+          @include icons($dBlue,$white,25px,25px);
+          &:hover{
+            background-color: $lBlue;
+          }
+  
+        }
+      }
+    }
+  }
+  
+  
+  /*End Of Team*/

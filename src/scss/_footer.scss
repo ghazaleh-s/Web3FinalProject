@@ -1,0 +1,55 @@
+/*Footer*/
+
+.footerStyle{
+    background-color: $dBlue;
+    color: $white;
+  .footerText{
+    ul{
+      li{
+        padding-top: 3px;
+      }
+      .eng{
+        font-family: "Nunito", sans-serif;
+        font-size: 13px;
+      }
+      a{
+        text-decoration: none;
+        color: $dLink;
+        &:hover{
+          color: $yellow;
+        }
+      }
+    }
+    .iconStyle{
+      i{
+        @include icons($yellow,$lBlue,25px,25px);
+        &:hover{
+          color: $dBlue;
+        }
+      }
+  
+    }
+  }
+  
+    .copyRight{
+      direction: ltr;
+      color: $white;
+      font-size: 10px;
+      font-family: "Nunito", sans-serif;
+      a{
+        text-decoration: none;
+        color: $dLink;
+        &:hover{
+          color: $yellow;
+        }
+      }
+  
+    }
+  
+  }
+  
+  
+  
+  
+  
+  /*End Of Footer*/

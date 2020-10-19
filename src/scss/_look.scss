@@ -1,0 +1,16 @@
+/*Look*/
+
+
+.look{
+    @include insertPictures(homeImages,lookPic,bottom);
+    background-attachment: fixed;
+    color: $white;
+    .lbStyle{
+      background-color: $yellow;
+      color: $white;
+      width: 100px;
+    }
+  }
+  
+  
+  /*End Of Look*/

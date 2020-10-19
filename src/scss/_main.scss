@@ -1,0 +1,69 @@
+/* Main */
+
+
+.main{
+  min-height: 100vh;
+
+  .mainMenu{
+    @include insertPictures(homeImages,mainPic,center);
+  }
+  .jdText{
+    margin: 200px 20%;
+    color: $cream;
+  }
+  .mainText{
+    margin: 200px auto;
+    text-align: center;
+    color: $cream;
+    p{
+      font-size: 15px;
+    }
+    span{
+      a{
+        font-family: "Nunito", sans-serif;
+        text-decoration: none;
+        background: linear-gradient(to right, #00416D 0%, #F8BD7F 54%, #F8BD7F 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover{
+          font-size: 18px;
+        }
+      }
+      i{
+        font-size: 8px;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+    }
+  }
+  
+  .oiStyle{
+    input,select{
+      height: 40px;
+      background-color: $white;
+      border-radius: 3px;
+      box-shadow: none;
+      border: none;
+      color: $dBlue;
+    }
+  }
+  .btnStyle{
+    button{
+      transition:all 1s;
+      background-color:$dBlue;
+      color: $white;
+      height: 41px;
+      &:hover{
+        background-color: $mBlue;
+        border: 2px solid $dBlue;
+      }
+      i, span{
+        color:$white;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+/* End Of Main */

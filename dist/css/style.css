@@ -1,0 +1,528 @@
+/* Mixins */
+/*Nav Style*/
+.navMenu {
+  position: fixed;
+  background-color: rgba(0, 65, 109, 0.909); }
+  .navMenu .logo {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: #efefeb; }
+  .navMenu .menuStyle {
+    position: relative; }
+    .navMenu .menuStyle .activeLink {
+      color: #efefeb;
+      font-size: 15px; }
+    .navMenu .menuStyle .deactiveLink {
+      color: rgba(245, 241, 218, 0.7);
+      font-size: 15px; }
+      .navMenu .menuStyle .deactiveLink:hover {
+        color: #efefeb; }
+    .navMenu .menuStyle .dropdown-menu {
+      top: 103%;
+      left: -105px;
+      background-color: #00416d;
+      border: 1px solid #efefeb; }
+      .navMenu .menuStyle .dropdown-menu a {
+        font-size: 13px; }
+        .navMenu .menuStyle .dropdown-menu a:hover {
+          font-size: 14px;
+          background-color: transparent; }
+  .navMenu .bStyle button {
+    transition: all 1s;
+    background-color: #00416d;
+    width: 100px;
+    height: 40px;
+    color: #efefeb; }
+    .navMenu .bStyle button span {
+      font-size: 15px; }
+    .navMenu .bStyle button i {
+      font-size: 10px; }
+    .navMenu .bStyle button:hover {
+      background-color: #145374;
+      border: 2px solid #00416d; }
+
+/*End of Nav*/
+/* Main */
+.main {
+  min-height: 100vh; }
+  .main .mainMenu {
+    background: linear-gradient(rgba(0, 65, 109, 0.4), rgba(0, 65, 109, 0.2)), url("/images/homeImages/mainPic.jpg") center center no-repeat;
+    background-size: cover; }
+  .main .jdText {
+    margin: 200px 20%;
+    color: #e3dfc8; }
+  .main .mainText {
+    margin: 200px auto;
+    text-align: center;
+    color: #e3dfc8; }
+    .main .mainText p {
+      font-size: 15px; }
+    .main .mainText span a {
+      font-family: "Nunito", sans-serif;
+      text-decoration: none;
+      background: linear-gradient(to right, #00416D 0%, #F8BD7F 54%, #F8BD7F 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .main .mainText span a:hover {
+        font-size: 18px; }
+    .main .mainText span i {
+      font-size: 8px;
+      margin-right: 3px;
+      margin-left: 3px; }
+  .main .oiStyle input, .main .oiStyle select {
+    height: 40px;
+    background-color: #efefeb;
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+    color: #00416d; }
+  .main .btnStyle button {
+    transition: all 1s;
+    background-color: #00416d;
+    color: #efefeb;
+    height: 41px; }
+    .main .btnStyle button:hover {
+      background-color: #145374;
+      border: 2px solid #00416d; }
+    .main .btnStyle button i, .main .btnStyle button span {
+      color: #efefeb;
+      font-size: 14px; }
+
+/* End Of Main */
+/*Statistics*/
+.static {
+  background: linear-gradient(rgba(0, 65, 109, 0.4), rgba(0, 65, 109, 0.2)), url("/images/homeImages/statistics.jpg") center bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #efefeb; }
+  .static span {
+    font-size: 55px;
+    font-family: BTabassom,'BTabassom',persianFont; }
+
+/*End Of Statistics*/
+/*Candidates*/
+.candidates {
+  background-color: #f8f8f8;
+  color: #00416d; }
+  .candidates .logoStyle {
+    transition: all 1s; }
+    .candidates .logoStyle a {
+      opacity: 30%;
+      cursor: pointer; }
+      .candidates .logoStyle a:hover {
+        opacity: 100%; }
+
+/*End of Candidates*/
+/*Carousel*/
+.carouselStyle ol li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #145374; }
+
+.carouselStyle .carouselImg {
+  display: block;
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto; }
+
+.carouselStyle .carouselText p {
+  font-family: BTabassom, "BTabassom", persianFont;
+  color: #00416d;
+  font-size: 16px;
+  padding: 30px 30px 40px 40px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  opacity: 70%; }
+
+.carouselStyle .carouselText h5 {
+  font-family: BTabassom, "BTabassom", persianFont;
+  color: #00416d;
+  opacity: 80%;
+  font-weight: bold;
+  font-size: 19px; }
+
+/*End Of Carousel*/
+/*Look*/
+.look {
+  background: linear-gradient(rgba(0, 65, 109, 0.4), rgba(0, 65, 109, 0.2)), url("/images/homeImages/lookPic.jpg") center bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #efefeb; }
+  .look .lbStyle {
+    background-color: #f8bd7f;
+    color: #efefeb;
+    width: 100px; }
+
+/*End Of Look*/
+/*Careers*/
+.careers {
+  background-color: #f8f8f8; }
+  .careers h3, .careers p {
+    direction: ltr;
+    color: #00416d; }
+  .careers .careerImg .cardImg {
+    width: 70%;
+    height: 100%;
+    background: url("/images/aboutImages/career.jpeg") left center no-repeat;
+    background-size: cover;
+    margin-right: 0;
+    border-radius: 1px;
+    box-shadow: 1px 1px 6px #00416d; }
+
+/*End Of Careers*/
+/*Team*/
+.team {
+  background-color: #f8f8f8;
+  color: #00416d; }
+  .team .teamText h5 {
+    font-size: 25px; }
+  .team .teamText span {
+    color: #5588a3;
+    font-size: 16px;
+    opacity: 58%; }
+  .team .teamText p {
+    font-size: 13px;
+    color: #145374;
+    opacity: 80%; }
+  .team .teamText .iconStyle i {
+    transition: all 1s;
+    text-align: center;
+    color: #efefeb;
+    margin-right: 3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #00416d; }
+    .team .teamText .iconStyle i:hover {
+      background-color: #5588a3; }
+
+/*End Of Team*/
+/*BlogInfo*/
+.blogInfo {
+  background-color: #f8f8f8;
+  color: #00416d; }
+  .blogInfo .blogText h5 {
+    font-size: 20px; }
+  .blogInfo .blogText p {
+    font-size: 11px; }
+  .blogInfo .cate span {
+    color: #00416d;
+    font-size: 13px; }
+    .blogInfo .cate span a {
+      text-decoration: none;
+      color: #5588a3; }
+      .blogInfo .cate span a:hover {
+        color: #145374; }
+  .blogInfo input {
+    border: 1px solid #00416d;
+    border-radius: 3px; }
+  .blogInfo .aboutImg img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 10px; }
+  .blogInfo .aboutImg .btnStyle {
+    transition: all 1s;
+    background-color: #00416d;
+    width: 90px;
+    height: 30px;
+    color: #efefeb;
+    font-size: 16px;
+    line-height: 16px; }
+    .blogInfo .aboutImg .btnStyle:hover {
+      background-color: #145374;
+      border: 2px solid #00416d;
+      padding-top: 0px;
+      padding-bottom: 0px; }
+  .blogInfo .catList li a {
+    text-decoration: none;
+    color: #037ebc; }
+    .blogInfo .catList li a:hover {
+      color: #29b5fc; }
+  .blogInfo .catList li span {
+    font-size: 13px;
+    color: #cccccc; }
+  .blogInfo .comments img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; }
+  .blogInfo .comments .cText h6 {
+    font-size: 18px; }
+  .blogInfo .comments .cText span {
+    font-size: 13px;
+    color: #5588a3; }
+  .blogInfo .comments .cText p {
+    font-size: 12px; }
+  .blogInfo .comments .cText .bStyle {
+    width: 60px; }
+  .blogInfo .form-control {
+    border: 1px solid #00416d;
+    border-radius: 3px; }
+  .blogInfo .bStyle {
+    transition: all 1s;
+    background-color: #00416d;
+    width: 120px;
+    height: 30px;
+    color: #efefeb;
+    font-size: 14px;
+    line-height: 14px; }
+    .blogInfo .bStyle:hover {
+      background-color: #145374;
+      border: 2px solid #00416d; }
+
+/*End Of BlogInfo*/
+/*Designer*/
+.blogInfo .designerHead .dImg {
+  width: 60px;
+  height: 60px; }
+
+.blogInfo .designerHead .headText h5 {
+  font-size: 20px;
+  padding-bottom: 10px; }
+
+.blogInfo .designerHead .headText i, .blogInfo .designerHead .headText span {
+  font-size: 12px;
+  color: #5588a3; }
+
+.blogInfo .designerHead .headText span:last-child, .blogInfo .designerHead .headText span:hover {
+  color: #145374; }
+
+.blogInfo .dPara {
+  font-size: 13px;
+  color: #5588a3; }
+
+.blogInfo .listCheck {
+  font-size: 13px;
+  color: #5588a3;
+  text-align: right; }
+  .blogInfo .listCheck::before {
+    font-family: FontAwesome;
+    content: "\f058";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    padding-left: 10px;
+    color: #96b7c8; }
+
+.blogInfo .design .cards button {
+  width: 100px; }
+  .blogInfo .design .cards button:first-child {
+    background-color: #b7ceda; }
+  .blogInfo .design .cards button:nth-child(2) {
+    background-color: #00416d;
+    color: #efefeb; }
+
+.blogInfo .design .cards .dCard {
+  background-color: #eaf0f4; }
+  .blogInfo .design .cards .dCard h4 {
+    font-size: 19px;
+    color: #037ebc;
+    padding-bottom: 10px; }
+    .blogInfo .design .cards .dCard h4 a {
+      text-decoration: none; }
+      .blogInfo .design .cards .dCard h4 a:hover {
+        color: #145374; }
+  .blogInfo .design .cards .dCard h6 {
+    font-size: 13px;
+    font-weight: bold; }
+    .blogInfo .design .cards .dCard h6 span {
+      color: #5588a3;
+      font-weight: lighter; }
+  .blogInfo .design .cards .dCard .socialCard i {
+    font-size: 12px; }
+
+/*End OF Designer*/
+.gal .galImg {
+  background-color: transparent;
+  border: none; }
+  .gal .galImg img {
+    width: 90%; }
+  .gal .galImg .galText h5 {
+    color: #00416d;
+    font-size: 18px; }
+  .gal .galImg .galText span {
+    font-size: 12px;
+    color: #999999; }
+  .gal .galImg .galText a {
+    font-size: 12px;
+    color: #5588a3;
+    text-decoration: none; }
+    .gal .galImg .galText a:hover {
+      color: #00416d; }
+
+.gal ul a {
+  color: #00416d;
+  font-size: 12px; }
+  .gal ul a:hover {
+    background-color: #00416d;
+    color: #f8bd7f;
+    border: 1px solid #f8bd7f; }
+
+.gal ul .pnbtn {
+  width: 40px;
+  height: 35px; }
+
+.gal ul .pagStyle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; }
+
+/*  List  */
+.jobList {
+  background-color: #f8f8f8;
+  color: #00416d; }
+  .jobList span {
+    font-size: 14px; }
+  .jobList i {
+    color: #5588a3;
+    font-size: 10px; }
+  .jobList .listStyle {
+    border-bottom: 1px solid #d9e5eb; }
+    .jobList .listStyle .listImg {
+      width: 50px;
+      height: 50px; }
+    .jobList .listStyle .subStyle {
+      color: #5588a3;
+      font-size: 12px;
+      line-height: 12px; }
+    .jobList .listStyle .badge {
+      font-size: 12px;
+      width: 100px; }
+
+/* End Of  List  */
+.services {
+  background-color: #f8f8f8; }
+  .services .cardStyle {
+    transition: all 1s;
+    background-color: white;
+    box-shadow: 2px 2px 15px 2px gray;
+    width: 100%;
+    height: 180px; }
+    .services .cardStyle .icons {
+      transition: all 2s;
+      color: #efefeb;
+      font-size: 20px;
+      line-height: 20px;
+      display: block;
+      background: #5588a3;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: relative;
+      top: 8%;
+      right: 40%; }
+      .services .cardStyle .icons .other {
+        position: absolute;
+        bottom: 29%;
+        right: 35%; }
+      .services .cardStyle .icons .one {
+        position: absolute;
+        bottom: 29%;
+        right: 30%; }
+    .services .cardStyle h6 {
+      color: #00416d; }
+    .services .cardStyle p {
+      font-size: 10px;
+      color: #5588a3; }
+    .services .cardStyle:hover {
+      transform: translateY(-10px); }
+      .services .cardStyle:hover .icons {
+        background-color: #efefeb;
+        border: 1px solid #5588a3;
+        color: #5588a3; }
+
+.contact {
+  background-color: #f8f8f8;
+  color: #00416d; }
+  .contact .formText h6 {
+    font-weight: bolder;
+    margin-bottom: 10px; }
+  .contact .formText span {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 20px; }
+  .contact .formText a {
+    text-decoration: none;
+    color: #037ebc;
+    display: block;
+    margin-bottom: 20px; }
+    .contact .formText a:hover {
+      color: #f8bd7f; }
+  .contact .formBtn {
+    transition: all 1s;
+    background-color: #00416d;
+    color: #efefeb;
+    font-size: 15px; }
+    .contact .formBtn:hover {
+      color: #f8bd7f; }
+
+/*Footer*/
+.footerStyle {
+  background-color: #00416d;
+  color: #efefeb; }
+  .footerStyle .footerText ul li {
+    padding-top: 3px; }
+  .footerStyle .footerText ul .eng {
+    font-family: "Nunito", sans-serif;
+    font-size: 13px; }
+  .footerStyle .footerText ul a {
+    text-decoration: none;
+    color: rgba(245, 241, 218, 0.7); }
+    .footerStyle .footerText ul a:hover {
+      color: #f8bd7f; }
+  .footerStyle .footerText .iconStyle i {
+    transition: all 1s;
+    text-align: center;
+    color: #5588a3;
+    margin-right: 3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f8bd7f; }
+    .footerStyle .footerText .iconStyle i:hover {
+      color: #00416d; }
+  .footerStyle .copyRight {
+    direction: ltr;
+    color: #efefeb;
+    font-size: 10px;
+    font-family: "Nunito", sans-serif; }
+    .footerStyle .copyRight a {
+      text-decoration: none;
+      color: rgba(245, 241, 218, 0.7); }
+      .footerStyle .copyRight a:hover {
+        color: #f8bd7f; }
+
+/*End Of Footer*/
+/*  General  */
+@font-face {
+  font-family: persianFont;
+  src: url("/lib/font/B-NAZANIN.TTF"); }
+
+body {
+  font-family: persianFont,"Nunito";
+  background-color: #efefeb; }
+  body h1 {
+    font-size: 50px; }
+  body a {
+    transition: all 1s; }
+  body .headings h3 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 35px; }
+  body .headings p {
+    font-size: 13px; }
+  body .headings h6 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 16px; }
+
+.main-half {
+  min-height: 10px; }
+
+/*End Of General*/

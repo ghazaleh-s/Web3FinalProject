@@ -1,0 +1,25 @@
+/*Candidates*/
+
+.candidates{
+
+    background-color: $lightBG;
+    color: $dBlue;
+    .logoStyle{
+      transition: all 1s;
+  
+      a{
+        opacity: 30%;
+        cursor: pointer;
+        &:hover{
+          opacity: 100%;
+        }
+  
+      }
+  
+  
+    }
+  
+  }
+  
+  
+  /*End of Candidates*/

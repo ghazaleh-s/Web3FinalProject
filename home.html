@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./favIcon/home-icon.png">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-rlt.css">
+    <link rel="stylesheet" href="./lib/animate/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
+    <link href='http://www.fontonline.ir/css/BTabassom.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./lib/font/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <title>خانه</title>
+</head>
+
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-dark  fixed-top navMenu">
+    <a href="" class="navbar-brand logo">CAREERS</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#my-nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse col-md-8 mr-auto bStyle" id="my-nav">
+        <ul class="navbar-nav mt-2  menuStyle ">
+            <li class="nav-item">
+                <a class="nav-link activeLink" href="./home.html" target="_blank">خانه</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link deactiveLink" href="./job-detail.html" target="_blank">لیست مشاغل</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link deactiveLink" href="./about.html" target="_blank">درباره ما</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link deactiveLink" href="./services.html" target="_blank">سرویس ها</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="./blog.html" id="navbarDropdown" role="left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    وبلاگ
+                </a>
+                <div class="dropdown-menu text-right mb-4" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item deactiveLink" href="./blog.html" target="_blank">وبلاگ</a>
+                    <a class="dropdown-item deactiveLink" href="./blog-post-detail.html" target="_blank">درباره وبلاگ</a>
+                </div>
+            </li>
+        </ul>
+        <button type="button" class="btn mr-auto justify-content-between" onclick="window.open('./contact.html')">
+            <span>تماس با ما </span>
+            <i class="fa fa-paper-plane "></i>
+        </button>
+    </div>
+</nav>
+<!--end of navbar -->
+
+
+<div class="container-fluid">
+
+    <!--Main-->
+    <section>
+        <div class="row main">
+            <div class="col-xl-12 mainMenu pb-5">
+                <div class="row">
+                    <div class="mainText pr-3 mb-4 wow zoomIn">
+                        <h1 class="pt-3">یک قالب قدرتمند وب سایت شغلی </h1>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="form-row flex-row text-center wow fadeInUp" data-wow-delay="1s">
+                        <div class=" col-lg-2 col-md-6 text-center offset-lg-2 oiStyle mb-2">
+                            <input type="text" class="align-items-center text-center pt-3 pb-3 w-100 " placeholder="عنوان شغل" id="search">
+                        </div>
+                        <div class=" col-lg-2 col-md-6 text-center oiStyle mb-2">
+                            <select class=" w-100 pr-1 text-center" id="city">
+                                <option class="optionStyle" value="0" selected>مکان</option>
+                                <option value="esf">اصفهان</option>
+                                <option value="bandar">بندرعباس</option>
+                                <option value="teh">تهران</option>
+                                <option value="shir">شیراز</option>
+                                <option value="rash">رشت</option>
+                            </select>
+                        </div>
+                        <div class=" col-lg-2 col-md-6 text-center oiStyle mb-2">
+                            <select  class="w-100 text-center pr-1" id="type">
+                                <option selected value="all">همه</option>
+                                <option value="part">پاره وقت</option>
+                                <option value="full">تمام وقت</option>
+                                
+                            </select>
+                        </div>
+                        <div class=" col-lg-2 col-md-6 text-center btnStyle mb-2">
+                            <button type="button" class="btn d-flex w-100  justify-content-center" onclick="eventHandler()">
+                                <span>جستجو</span>
+                                <i class="fa fa-search pr-1 text-center iconS"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--End Of Main-->
+
+    <!--Statistics-->
+    <section>
+        <div class="row">
+            <div class="col-12 headings static" >
+                <div class="row">
+                    <div class="col-8 offset-2 wow zoomIn" data-wow-delay="2s">
+                        <h3 class="text-center">آمار مشاغل</h3>
+                        <p class="text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    </div>
+                </div>
+                <div class="row mt-3 pb-3"  id="board"></div>
+            </div>
+        </div>
+    </section>
+    <!--End Of Statistics-->
+
+    <!--List-->
+    <section>
+        <div class="row jobList">
+            <div class="col-10 offset-1" >
+                <div class="row">
+                    <div class="col-8 offset-2 headings mb-5 wow zoomIn" data-wow-delay="1s">
+                        <h3 class="text-center">لیست مشاغل</h3>
+                    </div>
+                </div>
+                <div class="row align-items-center text-right  p-2 mb-2" >
+                    <div class="col-12" id="output"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End OfList-->
+
+    <!--Candidates-->
+    <section>
+        <div class="row">
+            <div class="col-12 headings candidates">
+                <div class="row pb-5">
+                    <div class="col-8 offset-2 ">
+                        <h3 class="text-center">شرکت هایی که داوطلبین ما در آن مشغولند</h3>
+                        <p class="text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    </div>
+                    <div class="col-8 offset-2 pt-5 wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="row  align-items-center ">
+                            <div class="col-lg-3 col-md-6 text-center logoStyle">
+                                <a href="https://mailchimp.com/">
+                                    <img src="./images/homeImages/mailchimpLogo.png"  class="d-inline w-100 pb-1" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center logoStyle">
+                                <a href="https://www.paypal.com/">
+                                    <img src="./images/homeImages/paypalLogo.png" class="d-inline w-100 pb-3" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center logoStyle">
+                                <a href="https://stripe.com/">
+                                    <img src="./images/homeImages/stripeLogo.png" class="d-inline w-75 pb-3" alt="">
+
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 text-center logoStyle">
+                                <a href="https://usa.visa.com/">
+                                    <img src="./images/homeImages/visaLogo.png"  class="d-inline w-50 pb-2" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Of Candidates-->
+
+    <!--Carousel-->
+    <section>
+        <div class="row justify-content-center pt-5 wow bounceInUp" data-wow-delay="0.8ms">
+            <div id="myCarousel" class="col-8 carousel slide carouselStyle pt-1 mb-5 pb-5 text-center" data-ride="carousel">
+                <ol class="carousel-indicators p-0 m-0">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item carouselText active">
+                        <img src="images/homeImages/client1.jpg" class="carouselImg mb-3" alt="...">
+                        <p class="text-center">
+                            <span>&#8221;</span>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                            از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                            <span>&#8220;</span>
+                        </p>
+                        <h5 class="text-center">علیرضا احمدی</h5>
+                    </div>
+                    <div class="carousel-item carouselText">
+                        <img src="images/homeImages/client2.jpg" class="carouselImg mb-3" alt="...">
+                        <p class="text-center">
+                            <span>&#8221;</span>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                            از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                            <span>&#8220;</span>
+                        </p>
+                        <h5 class="text-center ">مریم صارمی</h5>
+                    </div>
+                    <div class="carousel-item carouselText">
+                        <img src="images/homeImages/client4.jpg" class="carouselImg mb-3" alt="...">
+                        <p class="text-center">
+                            <span>&#8221;</span>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                            از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                            <span>&#8220;</span>
+                        </p>
+                        <h5 class="text-center ">حمید معماری</h5>
+                    </div>
+                    <div class="carousel-item carouselText">
+                        <img src="./images/homeImages/client3.jpg" class="carouselImg mb-3" alt="...">
+                        <p class="text-center">
+                            <span>&#8221;</span>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                            از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                            <span>&#8220;</span>
+                        </p>
+                        <h5 class="text-center "> گلناز جمشیدی</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Of Carousel-->
+
+    <!--Look-->
+    <section>
+        <div class="row look pb-4 wow fadeIn" data-wow-delay=".3s">
+            <div class="col-8 offset-2">
+                <div class="row align-items-center headings">
+                    <div class="col-md-8">
+                        <h3 class="text-center">آیا به دنبال شغل هستید؟</h3>
+                        <p class="text-center pb-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+                    </div>
+                    <div class="col-md-4 text-center pb-3 pt-4">
+                        <button type="button" class="btn lbStyle">عضویت</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Of Look-->
+
+    <!--Footer-->
+    <section>
+        <div class="row headings">
+            <div class="col-12 footerStyle pb-3">
+                <div class="row">
+                    <div class="col-8 offset-2 text-center">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 footerText wow fadeInRight" data-wow-delay="1s">
+                                <h6>جستجوی پرطرفدارها</h6>
+                                <ul class="list-unstyled text-center  mx-0 px-0">
+                                    <li><a href="">طراحی وب سایت</a></li>
+                                    <li><a href="">طراحی گرافیکی</a></li>
+                                    <li><a href="">توسعه دهنده وب</a></li>
+                                    <li><a href="" class="eng">Python</a></li>
+                                    <li><a href="" class="eng">HTML5</a></li>
+                                    <li><a href="" class="eng">CSS3</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footerText wow fadeInRight" data-wow-delay="1s">
+                                <h6>شرکت ها</h6>
+                                <ul class="list-unstyled text-center  mx-0 px-0">
+                                    <li><a href="">درباره ما</a></li>
+                                    <li><a href="">حرفه</a></li>
+                                    <li><a href="">وبلاگ</a></li>
+                                    <li><a href="">منابع</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footerText wow fadeInLeft" data-wow-delay="1s">
+                                <h6>پشتیبانی</h6>
+                                <ul class="list-unstyled text-center  mx-0 px-0">
+                                    <li><a href="">پشتیبانی</a></li>
+                                    <li><a href="">حریم خصوصی</a></li>
+                                    <li><a href="">شرایط خدمات</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footerText wow fadeInLeft" data-wow-delay="1s">
+                                <h6>تماس با ما</h6>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="iconStyle">
+                                        <i class="fa fa-facebook p-1"></i>
+                                    </a>
+                                    <a href="" class="iconStyle">
+                                        <i class="fa fa-twitter p-1"></i>
+                                    </a>
+                                    <a href="" class="iconStyle">
+                                        <i class="fa fa-instagram p-1"></i>
+                                    </a>
+                                    <a href="" class="iconStyle">
+                                        <i class="fa fa-linkedin p-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-8 offset-2 mt-4 wow bounceIn" data-wow-delay="2s">
+                                <span class="copyRight mt-4"> Copyright &#169; 2020 All rights reserved |
+                                    This template is made with
+                                    <i class="fa fa-heart-o text-danger"></i> by
+                                    <a href="https://mail.google.com/mail/u/g.safarkhani@gmail.com;">GHZL</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Of Footer-->
+
+</div>
+
+<script type="text/handlebars" id="board-template">
+    <div class="col-lg-3 col-md-6 text-center"  class="board">
+        <span data-toggle="counter-up">{{candidates}}</span>
+        <p>داوطلبین</p>
+    </div>
+    <div class="col-lg-3 col-md-6 text-center" class="board">
+        <span  data-toggle="counter-up">{{jobPosted}}</span>
+        <p>مشاغل ارسال شده</p>
+    </div>
+    <div class="col-lg-3 col-md-6 text-center" class="board">
+        <span  data-toggle="counter-up">{{jobFilled}}</span>
+        <p>مشاغل پر شده</p>
+    </div>
+    <div class="col-lg-3 col-md-6 text-center" class="board">
+        <span  data-toggle="counter-up">{{companies}}</span>
+        <p>شرکت ها</p>
+    </div>
+</script>
+
+<script type="text/handlebars" id="job-template">
+    {{#each this}}
+        <div class="row mb-3 listStyle wow fadeInUp" data-wow-delay="11ms" >
+            <div class="col-2">
+                <img src="{{logo}}" alt="" class="listImg d-block pb-2">
+            </div>
+            <div class="col-4 align-content-center align-items-center">
+                <span class="d-flex">{{jobTitle}}</span>
+                <div>
+                    <i class="fa fa-map-marker">
+                        <span class="subStyle">{{location}}</span>
+                        <span class="subStyle">|</span>
+                    </i>
+                    <span class="subStyle">{{companyName}}</span>
+                </div>
+            </div>
+            <div class="col-4 align-content-center">
+                <span>{{contractType}}</span>
+            </div>           
+            <div class="col-2 align-content-center">
+                {{#if urgent}}
+                    <span class="badge badge-danger w-100 text-center">فوری</span>
+                    {{else}}
+                         <span class="badge badge-success w-100 text-center ">غیر فوری</span>
+                {{/if}}
+            </div>
+        </div>
+    {{/each}}
+</script>
+
+<script src="lib/js/jquery/jquery-3.4.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/js/wow/wow.js"></script>
+<script src="lib/js/waypoints/waypoints.min.js"></script>
+<script src="lib/js/counterUp/counterup.min.js"></script>
+<script src="/handlebars-v4.7.6.js"></script>
+<script src="dist/js/main.js"></script>
+<script src="dist/js/home.js"></script>
+</body>
+</html>

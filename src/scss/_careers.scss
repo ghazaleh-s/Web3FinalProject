@@ -1,0 +1,25 @@
+/*Careers*/
+
+.careers{
+    background-color: $lightBG;
+    h3,p{
+      direction: ltr;
+      color: $dBlue;
+    }
+  
+  .careerImg{
+    .cardImg{
+      width: 70%;
+      height: 100%;
+      background: url("/images/aboutImages/career.jpeg") left center no-repeat;
+      background-size: cover;
+      margin-right: 0;
+      border-radius: 1px;
+      box-shadow: 1px 1px 6px $dBlue;
+    }
+  
+  }
+  }
+  
+  
+  /*End Of Careers*/

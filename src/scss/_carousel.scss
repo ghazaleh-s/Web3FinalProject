@@ -1,0 +1,50 @@
+/*Carousel*/
+
+.carouselStyle {
+    ol {
+      li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: $mBlue;
+      }
+    }
+  
+    .carouselImg {
+      display: block;
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  
+  
+    .carouselText {
+      p {
+        font-family: $persian;
+        color: $dBlue;
+        font-size: 16px;
+        padding: 30px 30px 40px 40px;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        opacity: 70%;
+      }
+      h5{
+        font-family: $persian;
+        color: $dBlue;
+        opacity: 80%;
+        font-weight: bold;
+        font-size: 19px;
+      }
+    }
+  
+  
+  
+  }
+  
+  
+  
+  
+  /*End Of Carousel*/

@@ -1,0 +1,47 @@
+// Contact
+
+
+.contact{
+    background-color:$lightBG;
+    color: $dBlue;
+    .formText{
+        h6{
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        span{
+            display: block;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: $linkBlue;
+            display: block;
+            margin-bottom: 20px;
+            &:hover{
+                color: $yellow;
+            }
+        }
+
+    }
+    .formBtn{
+        transition: all 1s;
+        background-color: $dBlue;
+        color: $white;
+        font-size: 15px;
+        &:hover{
+            color: $yellow;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+// End Of Contact

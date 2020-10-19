@@ -1,0 +1,62 @@
+/*Nav Style*/
+
+.navMenu{
+  position: fixed;
+  background-color: rgba(0,65,109,0.909);
+  .logo{
+    font-family: $eng;
+    font-size: 30px;
+    color: $white;
+  }
+  .menuStyle{
+    position: relative;
+
+    .activeLink{
+      color: $white;
+      font-size: 15px;
+    }
+    .deactiveLink{
+      color: $dLink;
+      font-size: 15px;
+      &:hover{
+        color: $white;
+      }
+    }
+    .dropdown-menu{
+      top:103%;
+      left: -105px;
+      background-color: $dBlue;
+      border: 1px solid $white;
+      a{
+        font-size: 13px;
+        &:hover{
+          font-size: 14px;
+          background-color: transparent;
+
+        }
+      }
+    }
+  }
+  .bStyle{
+    button{
+      transition: all 1s;
+      background-color: $dBlue;
+      width: 100px;
+      height: 40px;
+      color: $white;
+      span{
+        font-size: 15px;
+      }
+      i{
+        font-size: 10px;
+      }
+      &:hover{
+        background-color: $mBlue;
+        border: 2px solid $dBlue;
+      }
+    }
+  }
+}
+
+/*End of Nav*/
+

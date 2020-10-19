@@ -1,0 +1,19 @@
+/* Mixins */
+
+@mixin insertPictures($folderName,$name,$pos){
+  background: linear-gradient(rgba(0,65,109, .4),rgba(0,65,109, .2)),url('/images/#{$folderName}/#{$name}.jpg') center $pos no-repeat;
+  background-size: cover;
+
+}
+
+
+@mixin icons ($bgc ,$fc,$w,$h){
+  transition: all 1s;
+  text-align: center;
+  color: $fc;
+  margin-right: 3px;
+  width: $w;
+  height: $h;
+  border-radius: 50%;
+  background-color: $bgc;
+}

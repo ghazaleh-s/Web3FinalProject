@@ -1,0 +1,96 @@
+/*Designer*/
+
+
+
+.blogInfo{
+    .designerHead{
+        .dImg{
+            width: 60px;
+            height: 60px;
+        }
+        .headText{
+            h5{
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            i,span{
+                font-size: 12px;
+                color: $lBlue;
+            }
+            span{
+
+                &:last-child,&:hover{
+                    color: $mBlue;
+                }
+            }
+
+    }
+
+    
+    }
+    .dPara{
+        font-size: 13px;
+        color: $lBlue;
+    }
+        .listCheck{
+            font-size: 13px;
+            color: $lBlue;
+            text-align: right;
+             &::before{
+                font-family: FontAwesome;
+                content: "\f058";
+                display: inline-block;
+                padding-right: 3px;
+                vertical-align: middle;
+                padding-left: 10px;
+                color: lighten($lBlue,20%);
+            }
+        }
+    .design{
+        .cards{
+            button{
+                width: 100px;
+                &:first-child{
+                    background-color: lighten($color: $lBlue, $amount: 30%);
+                }
+                &:nth-child(2){
+                    background-color:$dBlue;
+                    color: $white;
+                }
+
+            }   
+            .dCard{
+                background-color: lighten($color: $lBlue, $amount: 45%);
+                h4{
+                    font-size: 19px;
+                    color: $linkBlue;
+                    padding-bottom: 10px;
+                    a{
+                        text-decoration: none;
+                        &:hover{
+                            color: $mBlue;
+                        }
+                    }
+                }
+                h6{
+                    font-size: 13px;
+                    font-weight: bold;
+                    span{
+                        color: $lBlue;
+                        font-weight: lighter;
+                    }
+                }
+                .socialCard{
+                    i{
+                        font-size: 12px;
+                    }
+                }
+            }     
+        }
+    }
+}
+
+
+
+
+/*End OF Designer*/
